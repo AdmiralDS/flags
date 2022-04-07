@@ -23,7 +23,7 @@
     "generate-svg-icon-exports": "node ./scripts/generate-svg-icon-exports.js"
   },
   "dependencies": {
-    "@admiral-ds/icons": "file:../admiral-icons/admiral-ds-icons-1.0.0.tgz",
+    "@admiral-ds/icons": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
