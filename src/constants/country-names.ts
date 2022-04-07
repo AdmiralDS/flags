@@ -1,4 +1,4 @@
-import {CountryIso3Code, CountryName} from "../@types/country";
+import type {CountryIso3Code, CountryName} from "../@types/country";
 
 export const CountryNames: { [key in CountryIso3Code]: CountryName } = {
     AFG: 'Afghanistan',

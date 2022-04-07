@@ -418,4 +418,4 @@ export const NAMES = [
     'Yemen',
     'Zambia',
     'Zimbabwe',
-] as const;
+];
