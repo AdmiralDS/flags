@@ -1,6 +1,8 @@
 {
   "name": "@admiral-ds/flags",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "AdmiralDS team",
+  "license": "See license in ./LICENSE",
   "main": "dist/flags.cjs.js",
   "module": "dist/flags.es.js",
   "files": [
