@@ -1,4 +1,5 @@
-import {ISO3_CODES, NAMES} from "../constants/countries";
+import {COMPONENTS_NAMES} from "../constants/components-names";
+import {ISO_ALPHA3} from "../constants/iso-codes";
 
-export type CountryName = typeof NAMES[number];
-export type CountryIso3Code = typeof ISO3_CODES[number];
+export type ComponentName = typeof COMPONENTS_NAMES[number];
+export type CountryAlpha3Code = typeof ISO_ALPHA3[number];

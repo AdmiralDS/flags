@@ -1,6 +1,6 @@
 export * as FlagsPack from "./components";
-export type {CountryName, CountryIso3Code} from "./@types/country";
-export {ISO3_CODES, NAMES} from "./constants/countries";
-export {CountryNames} from "./constants/country-names";
-export {CountryRusNames} from "./constants/country-rus-names";
+export type {ComponentName, CountryAlpha3Code} from "./@types/country";
+export {ComponentsNames} from "./constants/alpha3-to-component";
+export {CountriesRusNames} from "./constants/countries-rus-names";
+export {CountriesEngNames} from "./constants/countries-eng-names";
 
