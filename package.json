@@ -20,12 +20,12 @@
   "types": "./dist",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc --emitDeclarationOnly",
+    "build": "npm run generate-svg-icon-exports && vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview",
-    "generate-svg-icon-exports": "node ./scripts/generate-svg-icon-exports.js"
+    "generate-svg-icon-exports": "tsc src/constants/*.ts && node ./scripts/generate-svg-icon-exports.js"
   },
   "dependencies": {
-    "@admiral-ds/icons": "^1.0.0",
+    "@admiral-ds/icons": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -42,7 +42,6 @@
     "vite": "^2.8.0"
   },
   "peerDependencies": {
-    "@admiral-ds/icons": "^1.0.0",
     "react": ">=16",
     "react-dom": ">=16"
   }
