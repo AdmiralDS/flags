@@ -1,6 +1,6 @@
 {
   "name": "@admiral-ds/flags",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "author": "AdmiralDS team",
   "license": "See license in ./LICENSE",
   "main": "dist/flags.cjs.js",
@@ -9,37 +9,34 @@
     "dist",
     "tsconfig.json"
   ],
+  "types": "dist/index.d.ts",
+  "type": "module",
   "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/flags.cjs.js",
-      "import": "./dist/flags.es.js"
-    }
+    ".": "./dist/index.js"
   },
-  "types": "./dist",
   "scripts": {
+    "prepare": "tsc",
     "dev": "vite",
     "build": "npm run generate-svg-icon-exports && vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview",
-    "generate-svg-icon-exports": "tsc src/constants/*.ts && node ./scripts/generate-svg-icon-exports.js"
+    "generate-svg-icon-exports": "tsc && node --es-module-specifier-resolution=node ./scripts/generate-svg-icon-exports.js"
   },
   "dependencies": {
-    "@admiral-ds/icons": "^2.0.0",
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
+   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.1",
-    "@svgr/rollup": "^6.2.1",
-    "@types/node": "^17.0.23",
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@vitejs/plugin-react": "^1.0.7",
-    "fs-extra": "^10.0.1",
+    "@admiral-ds/icons": "^3.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@svgr/rollup": "^8.0.0",
+    "@types/node": "^18.0.0",
+    "@types/react": ">=16",
+    "@types/react-dom": ">=16",
+    "@vitejs/plugin-react": "^4.0.0",
+    "fs-extra": "^11.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "react": ">=16",
+    "react-dom": ">=16",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0"
   },
   "peerDependencies": {
     "react": ">=16",
