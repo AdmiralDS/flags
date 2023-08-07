@@ -1,16 +1,25 @@
-// Этот script запускается автоматически каждый раз перед запуском сторибука
-
 import { resolve } from 'path';
 import fsExtra from 'fs-extra';
-import flagsMeta from '@admiral-ds/icons/flags-metadata.json' assert { type: 'json' };
-import { ISO_ALPHA3, IsoCodes } from '../dist/constants/iso-codes';
-import { ComponentsNames } from '../dist/constants/alpha3-to-component';
-import { CountriesRusNames } from '../dist/constants/countries-rus-names';
-import { CountriesEngNames } from '../dist/constants/countries-eng-names';
+//import flagsMeta from '@admiral-ds/icons/flags-metadata.json' assert { type: 'json' };
+import { ISO_ALPHA3, IsoCodes } from '../src/constants/iso-codes';
+import { ComponentsNames } from '../src/constants/alpha3-to-component';
+import { CountriesRusNames } from '../src/constants/countries-rus-names';
+import { CountriesEngNames } from '../src/constants/countries-eng-names';
+
+// import { readFile } from 'fs/promises';
+
+// const flagsMeta = JSON.parse(
+//   await readFile(new URL('../node_modules/@admiral-ds/icons/flags-metadata.json', import.meta.url)),
+// );
+
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+
+const flagsMeta = require('@admiral-ds/icons/flags-metadata.json');
 
 const { existsSync, createFileSync, writeFileSync } = fsExtra;
 
-const generateReactExportFile = () => {
+export const generateReactExportFile = () => {
   const exportFileName = resolve('src', `components.ts`);
   if (!existsSync(exportFileName)) {
     createFileSync(exportFileName);
@@ -117,12 +126,9 @@ const checkAllCountriesInPack = () => {
   }
 };
 
-const checkCodes = () => {
+export const checkCodes = () => {
   checkComponentsInMeta();
   checkComponentsNames();
   checkShortNames();
   checkAllCountriesInPack();
 };
-
-checkCodes();
-generateReactExportFile();
