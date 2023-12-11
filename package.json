@@ -19,7 +19,7 @@
   "dependencies": {
    },
   "devDependencies": {
-    "@admiral-ds/icons": "^3.0.0",
+    "@admiral-ds/icons": "^4.0.0",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@svgr/rollup": "^8.0.0",
     "@types/node": "^18.0.0",
