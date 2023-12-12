@@ -1,3 +1,4 @@
+export { ReactComponent as Abkhazia } from '@admiral-ds/icons/build/flags/Abkhazia.svg';
 export { ReactComponent as Afghanistan } from '@admiral-ds/icons/build/flags/Afghanistan.svg';
 export { ReactComponent as AlandIslands } from '@admiral-ds/icons/build/flags/AlandIslands.svg';
 export { ReactComponent as Albania } from '@admiral-ds/icons/build/flags/Albania.svg';
@@ -162,8 +163,10 @@ export { ReactComponent as NewZealand } from '@admiral-ds/icons/build/flags/NewZ
 export { ReactComponent as Nicaragua } from '@admiral-ds/icons/build/flags/Nicaragua.svg';
 export { ReactComponent as Niger } from '@admiral-ds/icons/build/flags/Niger.svg';
 export { ReactComponent as Nigeria } from '@admiral-ds/icons/build/flags/Nigeria.svg';
+export { ReactComponent as Niue } from '@admiral-ds/icons/build/flags/Niue.svg';
 export { ReactComponent as NorfolkIsland } from '@admiral-ds/icons/build/flags/NorfolkIsland.svg';
 export { ReactComponent as NorthMacedonia } from '@admiral-ds/icons/build/flags/NorthMacedonia.svg';
+export { ReactComponent as NorthernMarianaIslands } from '@admiral-ds/icons/build/flags/NorthernMarianaIslands.svg';
 export { ReactComponent as Norway } from '@admiral-ds/icons/build/flags/Norway.svg';
 export { ReactComponent as Oman } from '@admiral-ds/icons/build/flags/Oman.svg';
 export { ReactComponent as Pakistan } from '@admiral-ds/icons/build/flags/Pakistan.svg';
@@ -180,12 +183,16 @@ export { ReactComponent as Portugal } from '@admiral-ds/icons/build/flags/Portug
 export { ReactComponent as PuertoRico } from '@admiral-ds/icons/build/flags/PuertoRico.svg';
 export { ReactComponent as Qatar } from '@admiral-ds/icons/build/flags/Qatar.svg';
 export { ReactComponent as RepublicOfKiribati } from '@admiral-ds/icons/build/flags/RepublicOfKiribati.svg';
+export { ReactComponent as Reunion } from '@admiral-ds/icons/build/flags/Reunion.svg';
 export { ReactComponent as Romania } from '@admiral-ds/icons/build/flags/Romania.svg';
 export { ReactComponent as RussianFederation } from '@admiral-ds/icons/build/flags/RussianFederation.svg';
 export { ReactComponent as Rwanda } from '@admiral-ds/icons/build/flags/Rwanda.svg';
+export { ReactComponent as SaintBarthelemy } from '@admiral-ds/icons/build/flags/SaintBarthelemy.svg';
 export { ReactComponent as SaintHelena } from '@admiral-ds/icons/build/flags/SaintHelena.svg';
 export { ReactComponent as SaintKittsAndNevis } from '@admiral-ds/icons/build/flags/SaintKittsAndNevis.svg';
 export { ReactComponent as SaintLucia } from '@admiral-ds/icons/build/flags/SaintLucia.svg';
+export { ReactComponent as SaintMartin } from '@admiral-ds/icons/build/flags/SaintMartin.svg';
+export { ReactComponent as SaintPierreAndMiquelon } from '@admiral-ds/icons/build/flags/SaintPierreAndMiquelon.svg';
 export { ReactComponent as SaintVincentAndTheGrenadines } from '@admiral-ds/icons/build/flags/SaintVincentAndTheGrenadines.svg';
 export { ReactComponent as Samoa } from '@admiral-ds/icons/build/flags/Samoa.svg';
 export { ReactComponent as SanMarino } from '@admiral-ds/icons/build/flags/SanMarino.svg';
@@ -196,6 +203,7 @@ export { ReactComponent as Serbia } from '@admiral-ds/icons/build/flags/Serbia.s
 export { ReactComponent as Seychelles } from '@admiral-ds/icons/build/flags/Seychelles.svg';
 export { ReactComponent as SierraLeone } from '@admiral-ds/icons/build/flags/SierraLeone.svg';
 export { ReactComponent as Singapore } from '@admiral-ds/icons/build/flags/Singapore.svg';
+export { ReactComponent as SintMaarten } from '@admiral-ds/icons/build/flags/SintMaarten.svg';
 export { ReactComponent as Slovakia } from '@admiral-ds/icons/build/flags/Slovakia.svg';
 export { ReactComponent as Slovenia } from '@admiral-ds/icons/build/flags/Slovenia.svg';
 export { ReactComponent as SolomonIslands } from '@admiral-ds/icons/build/flags/SolomonIslands.svg';
@@ -235,6 +243,7 @@ export { ReactComponent as Uzbekistan } from '@admiral-ds/icons/build/flags/Uzbe
 export { ReactComponent as Vanuatu } from '@admiral-ds/icons/build/flags/Vanuatu.svg';
 export { ReactComponent as Venezuela } from '@admiral-ds/icons/build/flags/Venezuela.svg';
 export { ReactComponent as VietNam } from '@admiral-ds/icons/build/flags/VietNam.svg';
+export { ReactComponent as VirginIslandsOfTheUnitedStates } from '@admiral-ds/icons/build/flags/VirginIslandsOfTheUnitedStates.svg';
 export { ReactComponent as WallisAndFutuna } from '@admiral-ds/icons/build/flags/WallisAndFutuna.svg';
 export { ReactComponent as WesternSahara } from '@admiral-ds/icons/build/flags/WesternSahara.svg';
 export { ReactComponent as Yemen } from '@admiral-ds/icons/build/flags/Yemen.svg';
