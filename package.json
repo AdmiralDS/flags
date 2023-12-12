@@ -1,6 +1,6 @@
 {
   "name": "@admiral-ds/flags",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "author": "AdmiralDS team",
   "license": "See license in ./LICENSE",
   "files": [
@@ -16,8 +16,6 @@
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly"
   },
-  "dependencies": {
-   },
   "devDependencies": {
     "@admiral-ds/icons": "^4.0.0",
     "@rollup/plugin-commonjs": "^25.0.0",
