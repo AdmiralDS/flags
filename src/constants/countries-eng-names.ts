@@ -1,5 +1,5 @@
-import type { CountryAlpha3Code } from '../index';
-import { IsoCodes } from './iso-codes';
+import type { CountryAlpha3Code } from '../index.js';
+import { IsoCodes } from './iso-codes.js';
 
 type Dictionary = { [key in CountryAlpha3Code]: string };
 
