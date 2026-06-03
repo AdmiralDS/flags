@@ -1,4 +1,4 @@
-import type { CountryAlpha3Code } from '../index';
+import type { CountryAlpha3Code } from '../index.js';
 
 export const CountriesRusNames: { [key in CountryAlpha3Code]: string } = {
   AFG: 'Афганистан',

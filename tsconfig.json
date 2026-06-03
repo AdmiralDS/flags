@@ -12,15 +12,14 @@
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "dist",
-    "moduleResolution": "node",
+    "rootDir": "src",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "target": "ESNext",
-    "baseUrl": "./src",
     "paths": {
-      "#src/*": ["./*"]
+      "#src/*": ["./src/*"]
     }
   },
   "include": ["src/*"],
   "exclude": ["**/node_modules/*"]
 }
-

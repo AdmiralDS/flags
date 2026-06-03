@@ -15,7 +15,13 @@ import { CountriesEngNames } from '../src/constants/countries-eng-names';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 
-const flagsMeta = require('@admiral-ds/icons/flags-metadata.json');
+type FlagMeta = {
+  isoCode: string;
+  name: string;
+  path: string;
+};
+
+const flagsMeta = require('@admiral-ds/icons/flags-metadata.json') as FlagMeta[];
 
 const { existsSync, createFileSync, writeFileSync } = fsExtra;
 
@@ -25,10 +31,19 @@ export const generateReactExportFile = () => {
     createFileSync(exportFileName);
   }
 
-  const exportFileContent = flagsMeta
-    .map(({ name, path }) => `export { ReactComponent as ${name} } from '${path}';`)
-    .concat(['']) // add empty lane at the file end
-    .join('\n');
+  const imports = flagsMeta.map(({ name, path }) => `import { ReactComponent as ${name}Svg } from '${path}';`);
+  const exports = flagsMeta.map(
+    ({ name }) => `export const ${name}: FunctionComponent<SVGProps<SVGSVGElement>> = ${name}Svg;`,
+  );
+
+  const exportFileContent = [
+    `import type { FunctionComponent, SVGProps } from 'react';`,
+    '',
+    ...imports,
+    '',
+    ...exports,
+    '',
+  ].join('\n');
 
   writeFileSync(exportFileName, exportFileContent);
 };
@@ -113,7 +128,7 @@ const checkAllCountriesInPack = () => {
     const exist = codesInMeta.includes(item);
 
     return exist ? null : item;
-  }).filter((item) => !!item);
+  }).filter((item): item is string => !!item);
 
   if (missingFlags.length > 0) {
     const countries = missingFlags.map((item) => {
