@@ -40,5 +40,12 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
+  },
+  "repository": "https://github.com/AdmiralDS/flags",
+  "bugs": {
+    "url": "https://github.com/AdmiralDS/flags/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
