@@ -19,7 +19,8 @@
     }
   },
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly && cp src/svg.d.ts dist/svg.d.ts"
+    "build": "vite build && tsc --emitDeclarationOnly && cp src/svg.d.ts dist/svg.d.ts",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@admiral-ds/icons": "^4.6.0",
@@ -32,6 +33,7 @@
     "fs-extra": "^11.1.1",
     "react": ">=16",
     "react-dom": ">=16",
+    "standard-version": "^9.5.0",
     "typescript": "^5.0.0",
     "vite": "^4.0.0"
   },
