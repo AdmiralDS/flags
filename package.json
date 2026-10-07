@@ -23,7 +23,7 @@
     "release": "standard-version"
   },
   "devDependencies": {
-    "@admiral-ds/icons": "^4.6.0",
+    "@admiral-ds/icons": "^4.7.0",
     "@svgr/rollup": "^8.0.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^18.0.0",
